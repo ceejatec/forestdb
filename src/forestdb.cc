@@ -24,6 +24,7 @@
 #include <sys/time.h>
 #endif
 
+#define forestdb_EXPORTS
 #include "libforestdb/forestdb.h"
 #include "fdb_internal.h"
 #include "filemgr.h"

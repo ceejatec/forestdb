@@ -20,6 +20,7 @@
 #include <string.h>
 #include <fcntl.h>
 
+#define forestdb_EXPORTS
 #include "libforestdb/forestdb.h"
 #include "fdb_internal.h"
 #include "hbtrie.h"

@@ -20,6 +20,7 @@
 #include <assert.h>
 #include <stdint.h>
 
+#define forestdb_EXPORTS
 #include "libforestdb/forestdb.h"
 #include "fdb_internal.h"
 #include "internal_types.h"

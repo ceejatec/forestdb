@@ -16,6 +16,7 @@
  */
 
 #include <stdlib.h>
+#define forestdb_EXPORTS
 #include "libforestdb/forestdb.h"
 
 LIBFDB_API

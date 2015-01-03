@@ -18,6 +18,7 @@
 #include <stdlib.h>
 #include <string.h>
 
+#define forestdb_EXPORTS
 #include "libforestdb/forestdb.h"
 #include "common.h"
 #include "internal_types.h"

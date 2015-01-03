@@ -137,7 +137,7 @@ void kv_set_var_nentry_test(btree_kv_ops *kv_ops)
     uint8_t v;
     idx_t idx;
     int n = 10;
-    uint8_t ksize = 8;
+    const uint8_t ksize = 8;
     uint8_t vsize = sizeof(v);
     size_t offset = 0;
     char key[ksize];
@@ -184,8 +184,9 @@ void kv_set_var_nentry_update_test(btree_kv_ops *kv_ops)
 
     bnoderef node;
     uint8_t v;
-    int i, n = 10;
-    uint8_t ksize = 8;
+    int i;
+    const int n = 10;
+    const uint8_t ksize = 8;
     uint8_t vsize = sizeof(v);
     size_t offset = 0;
     char key[n][ksize];
@@ -288,8 +289,8 @@ void kv_get_var_nentry_test(btree_kv_ops *kv_ops)
     bnoderef node;
     uint8_t v, v_out;
     idx_t idx;
-    int n = 10;
-    uint8_t ksize = 8;
+    const int n = 10;
+    const uint8_t ksize = 8;
     uint8_t vsize = sizeof(v);
     char key[n][ksize];
     char k_out[ksize];
@@ -468,8 +469,9 @@ void kv_get_str_data_size_test(btree_kv_ops *kv_ops)
 
     bnoderef node;
     uint8_t v;
-    uint8_t i, n = 10;
-    uint8_t ksize = 8;
+    uint8_t i;
+    const int n = 10;
+    const uint8_t ksize = 8;
     uint8_t vsize = sizeof(v);
     char key[n][ksize];
     int value[n];
@@ -608,8 +610,8 @@ void kv_copy_var_nentry_test(btree_kv_ops *kv_ops)
     bnoderef node, node_dst;
     uint8_t v, v_out;
     idx_t idx, src_idx, dst_idx, len;
-    int n=10;
-    uint8_t ksize = 8;
+    const int n=10;
+    const uint8_t ksize = 8;
     uint8_t vsize = sizeof(v);
     char key[n][ksize];
     char k_out[ksize];
@@ -736,7 +738,7 @@ void kv_get_nth_splitter_test(btree_kv_ops *kv_ops)
     uint8_t v;
     idx_t idx;
     int n = 10;
-    uint8_t ksize = 8;
+    const uint8_t ksize = 8;
     uint8_t vsize = sizeof(v);
     char key[ksize];
     char split[ksize];
@@ -781,7 +783,7 @@ void kv_cmp_key_str_test(btree_kv_ops *kv_ops, int i)
 
     idx_t idx;
     int cmp;
-    int n = 4;
+    const int n = 4;
     char keys[n][8];
     void *tmp;
     btree_kv_ops *kv_ops2;
